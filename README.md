@@ -6,16 +6,16 @@ Luego de setear varias Macs para mi, amigxs y compañerxs de trabajo, decidí ar
 
 </br>
 
-- [Homebrew](#homebrew)
-- [Shell](#shell)
-- [Conda defaults](#conda-defaults)
-- [Fonts](#fonts)
-- [Versionado](#versionado)
+- [Homebrew](#homebrew-☕)
+- [Shell](#shell-🐚)
+- [Conda defaults](#conda-defaults-🟢)
+- [Fonts](#fonts-🔡)
+- [Versionado](#versionado-🔣)
 
 
 ---
 
-# Homebrew
+# Homebrew ☕
 
 [Homebrew](https://brew.sh/) o `brew` es una herramienta de línea de comando que permite en forma simple, instalar software. En palabras de sus creadores: `"The Missing Package Manager for macOS (or Linux)"`. La vamos a usar para instalar muchas cosas. Tiene varios comandos, pero escencialmente vamos a usar dos:
 - `brew install <app>`: Software típicamente relacionado con la línea de comando (va a parar a _/usr/local/Cellar/_ y luego agrega symlinks en _/usr/local/bin/_ para que el OS lo encuentre). Se pueden poner varios paquetes e instala todos de una.
@@ -53,11 +53,11 @@ brew bundle --file ~/path/to/Brewfile_cli_apps
 ```
 
 
-# Shell
+# Shell 🐚
 Mac os trae una aplicación de terminal por defecto, pero es un poco limitada, por lo que la mayoría de la gente utiliza alguna alternativa. Iterm es la más popular y está en la lista Brewfile de GUI apps, si no está instalada, recomiendo instalarla. De ahora en más cuando mencione la terminal, me refiero a iterm.
 
-## Iterm look 💄
-La apariencia de la terminal y la información que muestra es totalmente personal.
+## Iterm look
+La apariencia 💄 de la terminal y la información que muestra es totalmente personal.
 
 1. Colores. Hay 10^7 color themes. [Acá un muestrario y links para bajarlos](https://iterm2colorschemes.com/). Cuando se configura el color te hace un preview de cómo se vería la terminal.
 >iTerm → Preferences → Profiles → Colors → Color presets → Import. Luego elegir.
@@ -71,7 +71,7 @@ Por defecto, la terminal usa bash. Pero no, vamos a usar **zsh** que tiene cosit
 
 >👉 Aviso 1: Es importante mencionar que cuando se abre la terminal (ya sea con la aplicación Terminal.app que trae mac os o con iterm), se carga automáticamente un archivo oculto que reside en el directorio del usuario (`~/`). El archivo en cuestión es `.bashrc` (para bash) ó `.zshrc` (para zsh). En este archivo se pueden agregar comandos personalizados que se ejecuten al iniciar la terminal y vamos a tener que acceder a este archivo eventualmente .
 
->👉 Aviso2: Existen otros shells interesantes como [fish](https://fishshell.com/) si quieren probar. También hace poco descubrí [Fig](https://fig.io/) que agrega autocomplete en forma moderna para muchas CLI tools. Es un mundo en sí mismo todo lo relacionado con la terminal.
+>👉 Aviso 2: Existen otros shells interesantes como [fish](https://fishshell.com/) si quieren probar. También hace poco descubrí [Fig](https://fig.io/) que agrega autocomplete en forma moderna para muchas CLI tools. Es un mundo en sí mismo todo lo relacionado con la terminal.
 
 1. Abrimos iterm y pegamos (instala zsh y algunos agregados como autocomplete, y syntax highlighting):
 ```shell
@@ -98,7 +98,7 @@ echo "ZSH_THEME=\"powerlevel10k/powerlevel10kTEST\"" >> ~/.zshrc
 exec zsh
 ```
 4. Ahora viene la parte divertida. Powerlevel tiene un wizard que ayuda a configurar todo. Hay muchísimas opciones. El wizard no permite desplegar el 100% del potencial, pero en la [página de github](https://github.com/romkatv/powerlevel10k) hay una explicación de muchas cosas que se pueden hacer (desde estado de repo git, timers, batería, qué música suena, IP, etc). También van a encontrar que mucha gente comparte sus configuraciones y .zshrc.
-```
+```shell
 p10k configure
 ```
 
@@ -115,7 +115,7 @@ Es probable que para terminar con la instalación de miniconda tengamos que corr
 conda init "$(basename "${SHELL}")"
 ```
 
-# Conda defaults
+# Conda defaults 🟢
 A la hora de crear nuevos entornos virtuales con conda (o cualquier otra tool similar), siempre es medio tedioso instalar los paquetes base que siempre usamos. Existe un archivo de configuración opcional `.condarc` donde podemos especificar qué paquetes queremos instalar por defecto al crear un nuevo entorno y muchas otras cosas más ([documentación](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html)). Pueden usar el [sample file de conda](https://docs.conda.io/projects/conda/en/latest/configuration.html) como esqueleto, o el [mío](./confs/defaults.condarc). El archivo no existe por defecto, con lo cual hay que crearlo, ya sea con la terminal o cualquier editor y luego guardarlo. Si quieren crearlo y editarlo con la terminal:
 ```shell
 nano ~/.condarc
@@ -142,7 +142,7 @@ Luego hay que configurar el uso de esta font en todos los softwares que deseemos
 <br>
 
 
-# Versionado
+# Versionado 🔣
 ## Git
 
 La idea es configurar Git y Github para poder pushear a nuestros repos sin tener que autenticarse cada vez.
