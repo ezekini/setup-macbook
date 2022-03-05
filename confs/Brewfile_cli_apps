@@ -1,0 +1,13 @@
+#tap "homebrew/bundle"
+#tap "homebrew/cask"
+#tap "homebrew/core"
+
+# CLI
+
+brew "git"
+brew "gh"
+brew "tldr"
+brew "tmux"
+brew "tree"
+brew "z"
+brew "cmatrix"
