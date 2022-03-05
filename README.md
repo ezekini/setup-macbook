@@ -34,7 +34,28 @@ Para buscar qué está disponible en homebrew, linkear a la web del desarrollado
 
 <br>
 
+## GUI soft
+El listado de las apps que instalaremos está en [Brewfile_cask_apps](./confs/Brewfile_cask_apps). Se pueden agregar o comentar las que no interesen. No hay ninguna diferencia entre instalarlas de esta manera o bajar individualmente desde la web del desarrollador y luego arrastrar a la carpeta de Aplicaciones (100 veces más lento nomás).
+
+1. Abrir terminal.
+2. Pegar:
+```shell
+brew bundle --file ~/path/to/Brewfile_cask_apps
+```
+3. Si son varias apps, tener paciencia. Homebrew a veces nos hará preguntas sobre el soft instalado y es bastante verboso así que hay que mirar como va el proceso cada tanto.
+
+## CLI tools
+El listado de las apps que instalaremos está en [Brewfile_cli_apps](./confs/Brewfile_cli_apps). Se trata de por ejemplo git, githhub cli, tmux, etc. Pueden buscar en la página de homebrew cada una y para qué sirve.
+
+1. Abrir iterm y pegar
+```shell
+brew bundle --file ~/path/to/Brewfile_cli_apps
+```
+
+
 # Shell
+Mac os trae una aplicación de terminal por defecto, pero es un poco limitada, por lo que la mayoría de la gente utiliza alguna alternativa. Iterm es la más popular y está en la lista Brewfile de GUI apps, si no está instalada, recomiendo instalarla. De ahora en más cuando mencione la terminal, me refiero a iterm.
+
 ## Iterm look 💄
 La apariencia de la terminal y la información que muestra es totalmente personal.
 
@@ -79,24 +100,6 @@ exec zsh
 4. Ahora viene la parte divertida. Powerlevel tiene un wizard que ayuda a configurar todo. Hay muchísimas opciones. El wizard no permite desplegar el 100% del potencial, pero en la [página de github](https://github.com/romkatv/powerlevel10k) hay una explicación de muchas cosas que se pueden hacer (desde estado de repo git, timers, batería, qué música suena, IP, etc). También van a encontrar que mucha gente comparte sus configuraciones y .zshrc.
 ```
 p10k configure
-```
-
-## GUI soft
-El listado de las apps que instalaremos está en [Brewfile_cask_apps](./confs/Brewfile_cask_apps). Se pueden agregar o comentar las que no interesen. No hay ninguna diferencia entre instalarlas de esta manera o bajar individualmente desde la web del desarrollador y luego arrastrar a la carpeta de Aplicaciones (100 veces más lento nomás).
-
-1. Abrir terminal.
-2. Pegar:
-```shell
-brew bundle --file ~/path/to/Brewfile_cask_apps
-```
-3. Si son varias apps, tener paciencia. Homebrew a veces nos hará preguntas sobre el soft instalado y es bastante verboso así que hay que mirar como va el proceso cada tanto.
-
-## CLI tools
-El listado de las apps que instalaremos está en [Brewfile_cli_apps](./confs/Brewfile_cli_apps). Se trata de por ejemplo git, githhub cli, tmux, etc. Pueden buscar en la página de homebrew cada una y para qué sirve.
-
-1. Abrir iterm y pegar
-```shell
-brew bundle --file ~/path/to/Brewfile_cli_apps
 ```
 
 ## Venvs y otros lenguanges
