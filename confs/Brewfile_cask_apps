@@ -2,7 +2,7 @@ cask_args appdir: "/Applications", require_sha: true
 
 # Almacenamiento
 cask "Dropbox"
-cask "google-backup-and-sync"
+cask "google-drive"
 
 # Comms
 cask "telegram-desktop"
@@ -26,8 +26,9 @@ cask "iterm2"
 cask "jupyter-notebook-viewer"
 #cask "nteract"
 cask "karabiner-elements" # Keyboard customizer
-cask "The Unarchiver"
+cask "the-unarchiver"
 cask "keka"
+cask "utm"
 cask "numi" # Calculator and converter application
 cask "mounty" # Re-mounts write-protected NTFS volumes
 #cask "miniconda"

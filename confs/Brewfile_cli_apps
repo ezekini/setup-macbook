@@ -6,6 +6,7 @@
 
 brew "git"
 brew "gh"
+brew "gitmoji"
 brew "tldr"
 brew "tmux"
 brew "tree"

@@ -7,21 +7,31 @@ Luego de setear varias Macs para mi, amigxs y compañerxs de trabajo, decidí ar
 </br>
 
 - [Homebrew](#homebrew)
+  - [GUI soft](#gui-soft)
+  - [CLI tools](#cli-tools)
 - [Shell](#shell)
+  - [Iterm look](#iterm-look)
+  - [~~Bash~~ Hello zsh](#bash-hello-zsh)
+  - [Venvs y otros lenguanges](#venvs-y-otros-lenguanges)
 - [Conda defaults](#conda-defaults)
 - [Fonts](#fonts)
 - [Versionado](#versionado)
+  - [Git](#git)
+  - [SSH](#ssh)
+  - [SSH pública en Github](#ssh-pública-en-github)
 
 
 ---
 
 # Homebrew
 
-[Homebrew](https://brew.sh/) o `brew` es una herramienta de línea de comando que permite en forma simple, instalar software. En palabras de sus creadores: `"The Missing Package Manager for macOS (or Linux)"`. La vamos a usar para instalar muchas cosas. Tiene varios comandos, pero escencialmente vamos a usar dos:
+[Homebrew](https://brew.sh/) o `brew` es una herramienta de línea de comando que permite en forma simple, instalar software. En palabras de sus creadores: `"The Missing Package Manager for macOS (or Linux)"`. La vamos a usar para instalar muchas cosas. Tiene varios comandos, pero en general se usan solo estos:
 - `brew install <app>`: Software típicamente relacionado con la línea de comando (va a parar a _/usr/local/Cellar/_ y luego agrega symlinks en _/usr/local/bin/_ para que el OS lo encuentre). Se pueden poner varios paquetes e instala todos de una.
 - `brew install --cask <app>` : Software con interfaz gráfica (típicamente va a parar a _/Applications/_). Se pueden poner varios paquetes e instala todos de una.
 - `brew bundle --file path/to/Brewfile` (opcionalmente `brew bundle install` si el archivo está en el directorio donde estamos posicionados): Instala todo lo que esté en el archivo _Brewfile_, ergo nos permite instalar múltiples cosas de una. Estrictamente hablando, se puede hacer con un solo comando, pero esto es más ordenado si el listado es grande.
-- `brew tap <tap_name>`: Agrega el repositorio _tap_name_ alternativo al "oficial" de homebrew.
+- `brew tap <tap_name>`: Agrega el repositorio _tap_name_ alternativo al "oficial" de homebrew. 
+
+Para buscar qué está disponible en homebrew, ver la web del desarrollador de cada paquete/soft para saber más, etc.--> https://formulae.brew.sh
 
 **Instalación**
 1. Abrir la terminal.
@@ -30,22 +40,21 @@ Luego de setear varias Macs para mi, amigxs y compañerxs de trabajo, decidí ar
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-Para buscar qué está disponible en homebrew, linkear a la web del desarrollador de cada paquete/soft, etc.--> https://formulae.brew.sh
-
+Puede que nos pregunte cosas, por lo que hay que mirar la pantalla cada tanto. Al final nos pedirá que corramos otros dos comandos para terminar la instalación.
 <br>
 
 ## GUI soft
-El listado de las apps que instalaremos está en [Brewfile_cask_apps](./confs/Brewfile_cask_apps). Se pueden agregar o comentar las que no interesen. No hay ninguna diferencia entre instalarlas de esta manera o bajar individualmente desde la web del desarrollador y luego arrastrar a la carpeta de Aplicaciones (100 veces más lento nomás).
+El listado de las apps que instalaremos está en [Brewfile_cask_apps](./confs/Brewfile_cask_apps). Se pueden agregar o comentar las que no interesen. No hay ninguna diferencia funcional al final del proceso entre instalarlas de esta manera o bajar individualmente desde la web del desarrollador y luego arrastrar a la carpeta de Aplicaciones.
 
 1. Abrir terminal.
 2. Pegar:
 ```shell
 brew bundle --file ~/path/to/Brewfile_cask_apps
 ```
-3. Si son varias apps, tener paciencia. Homebrew a veces nos hará preguntas sobre el soft instalado y es bastante verboso así que hay que mirar como va el proceso cada tanto.
+Si son varias apps, tener paciencia. Homebrew a veces nos hará preguntas sobre el soft instalado y es bastante verboso así que hay que mirar como va el proceso cada tanto. A su vez puede que ciertas aplicaciones fallen por un error de sha256 checksum. Haciendo la instalación manual soluciona el problema (no tengo claro por qué, parecería que bundle fuerza chequear el sha256 del release, pero instalando individualmente omite el paso si no tiene sha256): ```brew --cask <app_name>```
 
 ## CLI tools
-El listado de las apps que instalaremos está en [Brewfile_cli_apps](./confs/Brewfile_cli_apps). Se trata de por ejemplo git, githhub cli, tmux, etc. Pueden buscar en la página de homebrew cada una y para qué sirve.
+El listado de las apps que instalaremos está en [Brewfile_cli_apps](./confs/Brewfile_cli_apps). Se trata de por ejemplo git, githhub cli, tmux, etc. Pueden buscar en la página de homebrew cada una y ver para qué sirve.
 
 1. Abrir iterm y pegar
 ```shell
@@ -59,7 +68,7 @@ Mac os trae una aplicación de terminal por defecto, pero es un poco limitada, p
 ## Iterm look
 La apariencia 💄 de la terminal y la información que muestra es totalmente personal.
 
-1. Colores. Hay 10^7 color themes. [Acá un muestrario y links para bajarlos](https://iterm2colorschemes.com/). Cuando se configura el color te hace un preview de cómo se vería la terminal.
+1. Colores. Hay 10^7 color themes. [Acá un muestrario y un zip para bajarlos](https://iterm2colorschemes.com/). Cuando se configura el color te hace un preview de cómo se vería la terminal.
 >iTerm → Preferences → Profiles → Colors → Color presets → Import. Luego elegir.
 2. Por defecto hay un par de comandos básicos que no funcionan (borrar palabras con alt+backspace por ejemplo). Para activar estos shortcuts a los que estamos acostumbrados
 >iTerm → Preferences → Profiles → Keys → Load Preset… → Natural Text Editing
@@ -91,7 +100,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ```
 2. El siguiente comando agrega la variable ZSH_THEME y su valor a `.zshrc`. Podríamos hacerlo a mano buscando el archivo y abriéndolo con un editor de texto, pero la idea es movernos lo menos posible de la terminal.
 ```
-echo "ZSH_THEME=\"powerlevel10k/powerlevel10kTEST\"" >> ~/.zshrc
+echo "ZSH_THEME=\"powerlevel10k/powerlevel10k\" >> ~/.zshrc
 ```
 3. Reiniciamos zsh:
 ```
@@ -110,7 +119,7 @@ En mi caso trabajo con miniconda/python, R/RStudio y julia. Las instalaciones re
 ```shell
 brew bundle --file ~/path/to/Brewfile_lang
 ```
-Es probable que para terminar con la instalación de miniconda tengamos que correr en la terminal
+3. Para terminar con la instalación de miniconda corremos
 ```shell
 conda init "$(basename "${SHELL}")"
 ```
@@ -152,7 +161,7 @@ La idea es configurar Git y Github para poder pushear a nuestros repos sin tener
 1. Configuramos nuestros datos
 ``` shell
 git config --global user.name "CharlyGarcia"
-git config --global user.email charly@garcia.com
+git config --global user.email "charly@garcia.com"
 ```
 2. (opcional) Configuramos el nombre de nuestra branch inicial al hacer `git init` en una carpeta. En 2020 arrancó una discusión acerca de ciertos términos usados en la industria (`blacklist`, `master`, por ejemplo) que derivaron en que github deje de llamarle `master` a la branch inicial y lo cambió por `main`. Más allá de la discusión semántica y cultural, no existen branches esclavas, sino "alternativas", con lo cual llamarle `main` es desde un punto de vista técnico incluso más correcto (si nos ponemos estrictos, la branch "principal" no tiene casi diferencia con el resto, pero eso es otro tema).
 
@@ -182,7 +191,7 @@ git config --global core.editor "sublime"
 Para poder usar git en nuestros repos remotos de github, tenemos que generar y configurar una clave ssh. Básicamente es seguir los pasos de la [documentación de github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 1. Generamos una clave SSH. Reemplazar el mail por el que utilizan en github
 ``` shell
-$ ssh-keygen -t ed25519 -C "charly@garcia.com"
+ssh-keygen -t ed25519 -C "charly@garcia.com"
 ```
 Nos va a preguntar "Enter a file in which to save the key", le damos `enter`. 
 Luego nos va a preguntar "Enter passphrase (empty for no passphrase)", le damos `enter`. 
@@ -194,10 +203,7 @@ Una vez finalizado, tendremos dos archivos generados en `~/.ssh`. Algo del tipo:
 ```shell
 eval "$(ssh-agent -s)"
 ```
-```shell
-Agent pid 59566
-```
-3. Agregamos la clave privada a nuestro agente y config.
+1. Agregamos la clave privada a nuestro agente y config.
 ```shell
 nano ~/.ssh/config
 ```
