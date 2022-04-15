@@ -1,6 +1,7 @@
 cask_args appdir: "/Applications", require_sha: true
 
-cask "miniconda"
 brew "julia"
+cask "miniconda"
 cask "r"
 cask "rstudio"
+cask "visual-studio-code"
