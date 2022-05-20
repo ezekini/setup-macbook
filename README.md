@@ -1,8 +1,8 @@
 Alo 👋 
 
-Luego de setear varias Macs para mi, amigxs y compañerxs de trabajo, decidí armar esta guía como recordatorio personal y para usufructo de otrxs. Es altamente probable que algunas cosas fallen en el camino, a no desesperar. Todas las respuestas están en google y stackoverflow. 
-
->💡 **pssss**  👉🏼  Algunas de las herramientas se usan exclusivamente en el mundo IT. Otras son afines a mis intereses/usos particulares. La idea es que customizen a gusto personal.
+Luego de setear varias computadores con Mac OS para diferentes personas y principalmente para mi, decidí armar esta guía como recordatorio personal y para usufructo de otrxs. Es altamente probable que algunas cosas fallen en el camino, a no desesperar. Todas las respuestas están en google y stackoverflow. La idea es agilizar el proceso de instalación y configuración de algunas herramientas típicas de uso en IT. 
+>💡 **pssss**  👉🏼  El listado de aplicaciones y tools a instalar es total y completamente personal, por lo que la idea es customizar a gusto.
+Algunas son de uso exclusivo para sistemas (ejemplo git), otras de uso general (ej spotify 🎧), otras de uso mixto (ej Notion) Otras son afines a mis intereses/usos particulares.
 
 </br>
 
@@ -28,7 +28,7 @@ Luego de setear varias Macs para mi, amigxs y compañerxs de trabajo, decidí ar
 [Homebrew](https://brew.sh/) o `brew` es una herramienta de línea de comando que permite en forma simple, instalar software. En palabras de sus creadores: `"The Missing Package Manager for macOS (or Linux)"`. La vamos a usar para instalar muchas cosas. Tiene varios comandos, pero en general se usan solo estos:
 - `brew install <app>`: Software típicamente relacionado con la línea de comando (va a parar a _/usr/local/Cellar/_ y luego agrega symlinks en _/usr/local/bin/_ para que el OS lo encuentre). Se pueden poner varios paquetes e instala todos de una.
 - `brew install --cask <app>` : Software con interfaz gráfica (típicamente va a parar a _/Applications/_). Se pueden poner varios paquetes e instala todos de una.
-- `brew bundle --file path/to/Brewfile` (opcionalmente `brew bundle install` si el archivo está en el directorio donde estamos posicionados): Instala todo lo que esté en el archivo _Brewfile_, ergo nos permite instalar múltiples cosas de una. Estrictamente hablando, se puede hacer con un solo comando, pero esto es más ordenado si el listado es grande.
+- `brew bundle --file path/to/Brewfile` (opcionalmente `brew bundle install` si el archivo está en el directorio donde estamos posicionados): Instala todo lo que esté en el archivo _Brewfile_, ergo nos permite instalar múltiples cosas de una. Estrictamente hablando, se podría instalar todo usando los dos primeros, pero a mi al menos me gusta usar este método para poder ir administrando el listado.
 - `brew tap <tap_name>`: Agrega el repositorio _tap_name_ alternativo al "oficial" de homebrew. 
 
 Para buscar qué está disponible en homebrew, ver la web del desarrollador de cada paquete/soft para saber más, etc.--> https://formulae.brew.sh
@@ -44,69 +44,91 @@ Puede que nos pregunte cosas, por lo que hay que mirar la pantalla cada tanto. A
 <br>
 
 ## GUI soft
-El listado de las apps que instalaremos está en [Brewfile_cask_apps](./confs/Brewfile_cask_apps). Se pueden agregar o comentar las que no interesen. No hay ninguna diferencia funcional al final del proceso entre instalarlas de esta manera o bajar individualmente desde la web del desarrollador y luego arrastrar a la carpeta de Aplicaciones.
+El listado de las apps que instalaremos está en [Brewfile_cask_apps](./brewfiles/Brewfile_cask_apps.txt). Se pueden agregar o comentar las que no interesen. No hay ninguna diferencia funcional al final del proceso entre instalarlas de esta manera o bajar individualmente desde la web del desarrollador y luego arrastrar a la carpeta de Aplicaciones. 
+
+> :point_right: Tip 1: Las aplicaciones sensibles en lo que respecta a seguridad, como administradores de contraseñas, 2FA, etc. recomiendo bajarlas de la web del desarrollador. Yo tengo listadas algunas que uso como recordatorio, pero en general las comento y no las instalo con este método.
+
+> :point_right: Tip 2: Cada instalador que se sube al repositorio de `Homebrew` debería tener un hash SHA256 (secuencia alfanúmerica que identifica en forma unívoca a ese archivo tal y como es) para asegurarse de que no esté corrupto o modificado. Lamentablemente algunos no lo tienen (caso Dropbox o Google Drive al momento de la redacción de esta guía). El archivo con el listado de apps tiene un flag `require_sha: true` que hará que algunas apps fallen al intentar ser instaladas justamente por la ausencia de este hash en la información de la instalación que tiene homebrew. Queda a criterio personal sacar el flag para instalar todo sin errores o para aquellas que fallan, bajarlas luego de la web. 
 
 1. Abrir terminal.
 2. Pegar:
 ```shell
-brew bundle --file ~/path/to/Brewfile_cask_apps
+brew bundle --file /path/to/Brewfile_cask_apps.txt
 ```
-Si son varias apps, tener paciencia. Homebrew a veces nos hará preguntas sobre el soft instalado y es bastante verboso así que hay que mirar como va el proceso cada tanto. A su vez puede que ciertas aplicaciones fallen por un error de sha256 checksum. Haciendo la instalación manual soluciona el problema (no tengo claro por qué, parecería que bundle fuerza chequear el sha256 del release, pero instalando individualmente omite el paso si no tiene sha256): ```brew --cask <app_name>```
+Si son varias apps, tener paciencia. Homebrew a veces nos hará preguntas sobre el soft instalado, nos pedirá la conrtaseña, etc.  ```brew --cask <app_name>```
 
 ## CLI tools
-El listado de las apps que instalaremos está en [Brewfile_cli_apps](./confs/Brewfile_cli_apps). Se trata de por ejemplo git, githhub cli, tmux, etc. Pueden buscar en la página de homebrew cada una y ver para qué sirve.
+El listado de las apps que instalaremos está en [Brewfile_cli_apps](./brewfiles/Brewfile_cli_apps.txt). Se trata de por ejemplo git, githhub cli, tmux, etc. Pueden buscar en la página de homebrew cada una y ver para qué sirve.
 
-1. Abrir iterm y pegar
+1. Abrir iterm si lo instalaron, o sino la terminal, y pegar
 ```shell
-brew bundle --file ~/path/to/Brewfile_cli_apps
+brew bundle --file /path/to/Brewfile_cli_apps.txt
 ```
+2. Por algún motivo `z` no funciona directo, así que luego de googlear 
 
 
 # Shell
-Mac os trae una aplicación de terminal por defecto, pero es un poco limitada, por lo que la mayoría de la gente utiliza alguna alternativa. Iterm es la más popular y está en la lista Brewfile de GUI apps, si no está instalada, recomiendo instalarla. De ahora en más cuando mencione la terminal, me refiero a iterm.
+Mac OS trae una aplicación de terminal por defecto, pero es un poco limitada, por lo que la mayoría de la gente utiliza alguna alternativa. Iterm es la más popular y está en la lista Brewfile de GUI apps, si no está instalada, recomiendo instalarla. De ahora en más cuando mencione la terminal, me refiero a iterm.
 
 ## Iterm look
-La apariencia 💄 de la terminal y la información que muestra es totalmente personal.
+💄 La apariencia de la terminal y la información que muestra es motivo de infinitos tutoriales y guías similares a estas con diversos grados de personalización y locura.
 
-1. Colores. Hay 10^7 color themes. [Acá un muestrario y un zip para bajarlos](https://iterm2colorschemes.com/). Cuando se configura el color te hace un preview de cómo se vería la terminal.
+1. Themes. Hay $10^7$ color themes. [Acá un muestrario, instructivo y zip para bajarlos](https://iterm2colorschemes.com/). Cuando se configura el color te hace un preview de cómo se vería la terminal.
 >iTerm → Preferences → Profiles → Colors → Color presets → Import. Luego elegir.
-2. Por defecto hay un par de comandos básicos que no funcionan (borrar palabras con alt+backspace por ejemplo). Para activar estos shortcuts a los que estamos acostumbrados
+2. Por defecto hay un par de comandos básicos que no funcionan (borrar palabras con alt+backspace por ejemplo). Si quieren activarlos:
 >iTerm → Preferences → Profiles → Keys → Load Preset… → Natural Text Editing
 
 ## ~~Bash~~ Hello zsh
-Por defecto, la terminal usa bash. Pero no, vamos a usar **zsh** que tiene cositas más útiles. [oh-my-zsh](https://ohmyz.sh) es un framework para administrar zsh con múltiples plugins, cuestión de explorar y seguir los pasos ([ejemplo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/macos)). El mundo de las terminales se puede poner hardcore y confuso muy rápido. Está la shell, bash, zsh, scripting languages, frameworks para administrar todo este mundo, etc. Acá muestro una alternativa, hay muchas.
+### Zsh y ohmyzsh
+Por defecto, la terminal usa bash. Pero vamos a usar **zsh** que permite algunas cosas extras y útiles. [oh-my-zsh](https://ohmyz.sh) es un framework para administrar zsh con múltiples plugins, cuestión de explorar las [275+ opciones](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins). Vamos a configurar con algunos ejemplos, luego es cuestión de leer y agregar. El mundo de las terminales se puede poner hardcore y confuso muy rápido. Está la shell, bash, zsh, scripting languages, frameworks para administrar todo este mundo, etc. Acá muestro una alternativa, hay muchas.
 
 <br>
 
->👉 Aviso 1: Es importante mencionar que cuando se abre la terminal (ya sea con la aplicación Terminal.app que trae mac os o con iterm), se carga automáticamente un archivo oculto que reside en el directorio del usuario (`~/`). El archivo en cuestión es `.bashrc` (para bash) ó `.zshrc` (para zsh). En este archivo se pueden agregar comandos personalizados que se ejecuten al iniciar la terminal y vamos a tener que acceder a este archivo eventualmente .
+>👉 Aviso 1: Es importante mencionar que cuando se abre la terminal (ya sea con la aplicación Terminal.app que trae mac os o con iterm), se carga automáticamente un archivo oculto que reside en el directorio del usuario (`~/`). El archivo en cuestión es `.bashrc` (para bash) ó `.zshrc` (para zsh). En este archivo se pueden agregar comandos personalizados que se ejecuten al iniciar la terminal y vamos a tener que acceder a este archivo para realizar algunas configuracione extras.
 
->👉 Aviso 2: Existen otros shells interesantes como [fish](https://fishshell.com/) si quieren probar. También hace poco descubrí [Fig](https://fig.io/) que agrega autocomplete en forma moderna para muchas CLI tools. Es un mundo en sí mismo todo lo relacionado con la terminal.
+>👉 Aviso 2: Existen otros shells interesantes como [fish](https://fishshell.com/). También hace poco descubrí [fig](https://fig.io/). La terminal es un mundo en si mismo en el que mucha gente pasa horas trabajando, por lo que no está mal dedicarle un rato para trabajar cómodo.
 
-1. Abrimos iterm y pegamos (instala zsh y algunos agregados como autocomplete, y syntax highlighting):
+1. Abrimos iterm y pegamos el comando de brew para instalar instalar zsh y algunos agregados para tener autocompletition y syntax highlighting:
 ```shell
 brew install zsh zsh-autosuggestions zsh-syntax-highlighting
 ```
-2. Instalamos oh-my-zsh:
+2. Luego tenemos que agregar dos líneas al archivo `.zshrc`. Con este comando agregamos lo que figuar entre comillas al final del archivo sin necesidad de abrirlo (que bien puede hacerse con cualquier editor):
+```shell
+echo "source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+```
+```shell
+echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+```
+3. Instalamos oh-my-zsh:
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+4. Plugins: vamos a editar el listado de plugins de ohmyzsh que queremos usar. Como mencioné, vienen muchísimos por defecto y existen muchos otros que se pueden agregar. Pueden utilizar cualquier editor de texto, yo para este tipo de cosas uso `nano` que viene con la terminal:
+```shell
+cd
+nano .zshrc
+```
+Una vez abierto tenemos que buscar la línea que dice 
+`plugins=(...)` y colocar los que queremos usar. En mi caso arranco con `plugins=(git z colorize copypath copyfile gh gitfast jsontools sublime tmux vscode)`
 <br>
 
-Ahora vamos a instalar el theme (*Powerlevel10k*). Alternativamente podemos instalar [oh-my-posh](https://ohmyposh.dev/) o [starship](https://starship.rs/) que son exclusivos para el prompt y ambos deben estar buenos.: 
+### Powerlevel prompt
+
+Ahora vamos a instalar el theme (*Powerlevel10k*). Alternativamente podemos instalar [oh-my-posh](https://ohmyposh.dev/) o [starship](https://starship.rs/) que son exclusivos para el prompt y ambos deben estar buenos, pero nunca los probé: 
 
 1. Clonamos el repo en la carpeta adecuada:
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
-2. El siguiente comando agrega la variable ZSH_THEME y su valor a `.zshrc`. Podríamos hacerlo a mano buscando el archivo y abriéndolo con un editor de texto, pero la idea es movernos lo menos posible de la terminal.
+2. El siguiente comando agrega la variable ZSH_THEME y su valor a `.zshrc`.
 ```
-echo "ZSH_THEME=\"powerlevel10k/powerlevel10k\" >> ~/.zshrc
+echo 'source ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 3. Reiniciamos zsh:
 ```
 exec zsh
 ```
-4. Ahora viene la parte divertida. Powerlevel tiene un wizard que ayuda a configurar todo. Hay muchísimas opciones. El wizard no permite desplegar el 100% del potencial, pero en la [página de github](https://github.com/romkatv/powerlevel10k) hay una explicación de muchas cosas que se pueden hacer (desde estado de repo git, timers, batería, qué música suena, IP, etc). También van a encontrar que mucha gente comparte sus configuraciones y .zshrc.
+4. Ahora viene la parte divertida. Powerlevel tiene un wizard que ayuda a configurar todo. Hay muchas opciones y en general ya con eso vamos a estar bien contentos. El wizard no permite desplegar el 100% del potencial, pero en la [página de github](https://github.com/romkatv/powerlevel10k) hay una explicación de muchas cosas que se pueden hacer (colores, git info expandida, batería, qué música suena, IP, etc). También van a encontrar que mucha gente comparte sus configuraciones y .zshrc.
 ```shell
 p10k configure
 ```
