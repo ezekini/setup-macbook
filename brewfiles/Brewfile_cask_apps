@@ -9,16 +9,6 @@ cask "telegram-desktop"
 cask "whatsapp"
 cask "slack"
 
-# infosec
-cask "1password" # Password manager that keeps all passwords secure behind one password
-cask "authy" # 2FA
-cask "lulu" # Open-source firewall to block unknown outgoing connections
-cask "oversight" # Monitors computer mic and webcam
-cask "reikey" # Scans, detects, and monitors keyboard taps
-cask "blockblock" # Monitors common persistence locations
-cask "knockknock" # Tool to show what is persistently installed on the computer
-
-
 # OS management tools
 cask "rectangle" # Move and resize windows using keyboard shortcuts or snap areas
 cask "aldente" # Menu bar tool to limit maximum charging percentage
@@ -26,7 +16,7 @@ cask "aldente" # Menu bar tool to limit maximum charging percentage
 #cask "pock" # Utility to display the Dock in the Touch Bar
 #cask "amethyst" # Automatic tiling window manager similar to xmonad
 #cask "nightowl" # Utility to toggle dark mode
-
+#cask "deskreen" # Turns any device with a web browser into a secondary screen
 
 # multimedia
 cask "kid3" # Audio tagger focusing on efficiency
@@ -47,6 +37,7 @@ cask "notunes" # Evitar que se abra la app de musica de mac os
 cask "android-file-transfer" # Transfer files from and to an Android smartphone
 cask "dbeaver-community" # Universal database tool and SQL client
 cask "sublime-text" # Text editor for code, markup and prose
+cask "bbedit" # Text, code, and markup editor
 cask "appcleaner" # Application uninstaller
 cask "dash" # API documentation browser and code snippet manager
 cask "firefox"
@@ -64,9 +55,18 @@ cask "textbuddy" # Convert, filter, sort, and transform text
 cask "workflowy" # Notetaking tool
 cask "notion" # App to write, plan, collaborate, and get organized
 cask "niftyman" # Beautifully crafted Notion experience in MacOS menu bar!
-cask "notion-enhanced" # Enhancer/customiser for the all-in-one productivity workspace notion.so
 cask "zotero" # Collect, organize, cite, and share research sources
 cask "prusaslicer" 
+#cask "notion-enhanced" # Enhancer/customiser for the all-in-one productivity workspace notion.so
 #cask "nteract" # Interactive computing suite
 #cask "syncthing" # Open source continuous file synchronization application
 
+
+# infosec
+#cask "1password" # Password manager that keeps all passwords secure behind one password
+#cask "authy" # 2FA
+#cask "lulu" # Open-source firewall to block unknown outgoing connections
+#cask "oversight" # Monitors computer mic and webcam
+#cask "reikey" # Scans, detects, and monitors keyboard taps
+#cask "blockblock" # Monitors common persistence locations
+#cask "knockknock" # Tool to show what is persistently installed on the computer
