@@ -1,6 +1,6 @@
 Alo 👋 
 
-Luego de setear varias computadores con Mac OS para diferentes personas y principalmente para mi, decidí armar esta guía como recordatorio personal y para usufructo de otrxs. Es altamente probable que algunas cosas fallen en el camino, a no desesperar. Todas las respuestas están en google y stackoverflow. La idea es agilizar el proceso de instalación y configuración de algunas herramientas típicas de uso en IT. 
+Luego de setear varias computadores con Mac OS para diferentes personas y principalmente para mi, decidí armar esta guía como recordatorio personal y para uso de otrxs. Es altamente probable que algunas cosas fallen en el camino, a no desesperar. Todas las respuestas están en google y stackoverflow. La idea es agilizar el proceso de instalación y configuración de algunas herramientas típicas de uso en IT. 
 >💡 **pssss**  👉🏼  El listado de aplicaciones y tools a instalar es total y completamente personal, por lo que la idea es customizar a gusto.
 Algunas son de uso exclusivo para sistemas (ejemplo git), otras de uso general (ej spotify 🎧), otras de uso mixto (ej Notion) Otras son afines a mis intereses/usos particulares.
 
