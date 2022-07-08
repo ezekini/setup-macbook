@@ -60,7 +60,7 @@ cask "prusaslicer"
 #cask "notion-enhanced" # Enhancer/customiser for the all-in-one productivity workspace notion.so
 #cask "nteract" # Interactive computing suite
 #cask "syncthing" # Open source continuous file synchronization application
-
+#cask "texstudio"
 
 # infosec
 #cask "1password" # Password manager that keeps all passwords secure behind one password
