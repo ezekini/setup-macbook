@@ -199,24 +199,6 @@
 					<string>BigQuery_Standard_SQL</string>
 				</dict>
 			</dict>
-			<key>Boto3</key>
-			<dict>
-				<key>date</key>
-				<date>2021-09-03T19:34:42Z</date>
-				<key>entry</key>
-				<dict>
-					<key>authorLinkHref</key>
-					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Boto3#readme</string>
-					<key>authorLinkText</key>
-					<string>Randall Kahler</string>
-					<key>name</key>
-					<string>boto3</string>
-					<key>platform</key>
-					<string>usercontribBoto3</string>
-					<key>uniqueIdentifier</key>
-					<string>Boto3</string>
-				</dict>
-			</dict>
 			<key>NLTK</key>
 			<dict>
 				<key>date</key>
@@ -264,7 +246,7 @@
 			<key>Seaborn</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-24T18:07:54Z</date>
+				<date>2022-08-16T17:16:27Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -361,6 +343,24 @@
 		</dict>
 		<key>uninstalled</key>
 		<dict>
+			<key>Boto3</key>
+			<dict>
+				<key>date</key>
+				<date>2022-08-16T17:11:29Z</date>
+				<key>entry</key>
+				<dict>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Boto3#readme</string>
+					<key>authorLinkText</key>
+					<string>Randall Kahler</string>
+					<key>name</key>
+					<string>boto3</string>
+					<key>platform</key>
+					<string>usercontribBoto3</string>
+					<key>uniqueIdentifier</key>
+					<string>Boto3</string>
+				</dict>
+			</dict>
 			<key>NetworkX</key>
 			<dict>
 				<key>date</key>
@@ -661,13 +661,7 @@
 		<key>installed</key>
 		<dict>
 			<key>http://kapeli.com/feeds/Python_3.xml</key>
-			<dict>
-				<key>3.7.12</key>
-				<dict>
-					<key>date</key>
-					<date>2022-02-13T19:32:31Z</date>
-				</dict>
-			</dict>
+			<dict/>
 		</dict>
 		<key>uninstalled</key>
 		<dict>
@@ -677,6 +671,11 @@
 				<dict>
 					<key>date</key>
 					<date>2021-04-28T13:26:01Z</date>
+				</dict>
+				<key>3.7.12</key>
+				<dict>
+					<key>date</key>
+					<date>2022-08-16T17:12:12Z</date>
 				</dict>
 			</dict>
 		</dict>

@@ -12,11 +12,12 @@ cask "slack"
 # OS management tools
 cask "rectangle" # Move and resize windows using keyboard shortcuts or snap areas
 cask "aldente" # Menu bar tool to limit maximum charging percentage
+cask "betterdisplay"
 #cask "hocus-focus"
 #cask "pock" # Utility to display the Dock in the Touch Bar
 #cask "amethyst" # Automatic tiling window manager similar to xmonad
-#cask "nightowl" # Utility to toggle dark mode
-#cask "deskreen" # Turns any device with a web browser into a secondary screen
+cask "nightowl" # Utility to toggle dark mode
+cask "deskreen" # Turns any device with a web browser into a secondary screen
 
 # multimedia
 cask "kid3" # Audio tagger focusing on efficiency

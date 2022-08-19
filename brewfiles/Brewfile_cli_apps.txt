@@ -13,3 +13,4 @@ brew "tree" # Display directories as trees (with optional color/HTML output)
 brew "nnn" # Tiny, lightning fast, feature-packed file manager
 brew "cmatrix" # Console Matrix
 brew "z" # Tracks most-used directories to make cd smarter
+#brew "rclone" #Rsync for cloud storage
