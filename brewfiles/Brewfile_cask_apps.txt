@@ -18,6 +18,8 @@ cask "betterdisplay"
 #cask "amethyst" # Automatic tiling window manager similar to xmonad
 cask "nightowl" # Utility to toggle dark mode
 cask "deskreen" # Turns any device with a web browser into a secondary screen
+cask "maccy" # Clipboard manager
+
 
 # multimedia
 cask "kid3" # Audio tagger focusing on efficiency
