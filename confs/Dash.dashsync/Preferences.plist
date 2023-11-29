@@ -57,7 +57,7 @@
 			<key>iTerm2</key>
 			<dict>
 				<key>date</key>
-				<date>2022-01-31T15:41:02Z</date>
+				<date>2023-03-15T15:02:32Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -184,7 +184,7 @@
 			<key>BigQuery_Standard_SQL</key>
 			<dict>
 				<key>date</key>
-				<date>2022-04-13T15:04:46Z</date>
+				<date>2023-10-22T16:01:03Z</date>
 				<key>entry</key>
 				<dict>
 					<key>authorLinkHref</key>
@@ -199,10 +199,59 @@
 					<string>BigQuery_Standard_SQL</string>
 				</dict>
 			</dict>
+			<key>Keras</key>
+			<dict>
+				<key>date</key>
+				<date>2023-05-05T14:24:18Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>Keras</string>
+						<string>Deep Learning</string>
+						<string>Machine Learning</string>
+						<string>Theano</string>
+						<string>TensorFlow</string>
+						<string>Neural Networks</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Keras#readme</string>
+					<key>authorLinkText</key>
+					<string>Kyung Mo Kweon</string>
+					<key>name</key>
+					<string>Keras</string>
+					<key>platform</key>
+					<string>usercontribKeras</string>
+					<key>uniqueIdentifier</key>
+					<string>Keras</string>
+				</dict>
+			</dict>
+			<key>LightGBM</key>
+			<dict>
+				<key>date</key>
+				<date>2022-09-13T14:47:46Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>lgbm</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/LightGBM#readme</string>
+					<key>authorLinkText</key>
+					<string>Kindulov M.</string>
+					<key>name</key>
+					<string>LightGBM</string>
+					<key>platform</key>
+					<string>usercontribLightGBM</string>
+					<key>uniqueIdentifier</key>
+					<string>LightGBM</string>
+				</dict>
+			</dict>
 			<key>NLTK</key>
 			<dict>
 				<key>date</key>
-				<date>2020-06-30T14:09:08Z</date>
+				<date>2023-10-22T16:01:21Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -226,7 +275,7 @@
 			<key>Scikit</key>
 			<dict>
 				<key>date</key>
-				<date>2021-02-20T19:16:52Z</date>
+				<date>2023-10-22T16:01:08Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -234,7 +283,7 @@
 					<key>authorLinkHref</key>
 					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Scikit#readme</string>
 					<key>authorLinkText</key>
-					<string>Aziz Alto, Josh Devlin, Christian Stade-Schuldt, Joel Nothman</string>
+					<string>Tianshu Wang, Aziz Alto, Josh Devlin, Christian Stade-Schuldt, Joel Nothman</string>
 					<key>name</key>
 					<string>scikit-learn</string>
 					<key>platform</key>
@@ -246,21 +295,21 @@
 			<key>Seaborn</key>
 			<dict>
 				<key>date</key>
-				<date>2022-08-16T17:16:27Z</date>
+				<date>2023-10-22T16:01:26Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
 					<array>
-						<string>Seaborn Python</string>
-						<string>Python visualization library</string>
-						<string>matplotlib based</string>
-						<string>sns</string>
-						<string>seaborn</string>
+						<string>python</string>
+						<string>graph</string>
+						<string>matplotlib</string>
+						<string>visualization</string>
+						<string>data</string>
 					</array>
 					<key>authorLinkHref</key>
 					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Seaborn#readme</string>
 					<key>authorLinkText</key>
-					<string>Angelo Varlotta</string>
+					<string>Paulo S. Costa</string>
 					<key>name</key>
 					<string>seaborn</string>
 					<key>platform</key>
@@ -318,15 +367,15 @@
 			<key>statsmodels</key>
 			<dict>
 				<key>date</key>
-				<date>2021-12-03T21:09:42Z</date>
+				<date>2023-05-12T13:25:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
 					<array>
 						<string>Statsmodels</string>
 						<string>statsmodels</string>
-						<string>Statsmodels 0.12.0</string>
-						<string>statsmodels 0.12.0</string>
+						<string>Statsmodels 0.13.1</string>
+						<string>statsmodels 0.13.1</string>
 					</array>
 					<key>authorLinkHref</key>
 					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/statsmodels#readme</string>
@@ -338,6 +387,31 @@
 					<string>usercontribstatsmodels</string>
 					<key>uniqueIdentifier</key>
 					<string>statsmodels</string>
+				</dict>
+			</dict>
+			<key>xgboost</key>
+			<dict>
+				<key>date</key>
+				<date>2022-09-13T14:47:34Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>XGBoost 1.2.0</string>
+						<string>xgboost 1.2.0</string>
+						<string>XGBoost</string>
+						<string>xgboost</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/xgboost#readme</string>
+					<key>authorLinkText</key>
+					<string>Angelo Varlotta</string>
+					<key>name</key>
+					<string>XGBoost</string>
+					<key>platform</key>
+					<string>usercontribxgboost</string>
+					<key>uniqueIdentifier</key>
+					<string>xgboost</string>
 				</dict>
 			</dict>
 		</dict>
@@ -407,6 +481,8 @@
 			<string>bq:</string>
 			<key>~/Library/Application Support/Dash/User Contributed/TensorFlow 2/TensorFlow 2.docset</key>
 			<string>tf</string>
+			<key>~/Library/Application Support/Dash/User Contributed/XGBoost/XGBoost 1.2.0.docset</key>
+			<string>xgboost:</string>
 			<key>~/Library/Application Support/Dash/User Contributed/scikitlearn/scikit-learn.docset</key>
 			<string>sklearn</string>
 			<key>~/Library/Application Support/Dash/User Contributed/seaborn/seaborn 0.11.0.docset</key>
