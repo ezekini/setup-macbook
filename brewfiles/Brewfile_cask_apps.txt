@@ -1,8 +1,8 @@
 cask_args appdir: "/Applications", require_sha: true
 
 # Almacenamiento
-cask "Dropbox"
 cask "google-drive"
+#cask "Dropbox"
 
 # Comms
 cask "telegram-desktop"
@@ -13,13 +13,15 @@ cask "slack"
 cask "rectangle" # Move and resize windows using keyboard shortcuts or snap areas
 cask "aldente" # Menu bar tool to limit maximum charging percentage
 cask "betterdisplay"
+cask "nightowl" # Utility to toggle dark mode
+cask "hiddenbar" # Hidden Bar lets you hide menu bar items to give your Mac a cleaner look.
+cask "bluesnooze" # Prevents your sleeping computer from connecting to Bluetooth accessories
 #cask "hocus-focus"
 #cask "pock" # Utility to display the Dock in the Touch Bar
 #cask "amethyst" # Automatic tiling window manager similar to xmonad
-cask "nightowl" # Utility to toggle dark mode
 cask "deskreen" # Turns any device with a web browser into a secondary screen
-cask "maccy" # Clipboard manager
-
+#cask "hammerspoon" # desktop automation tool for macOS with Lua scripts
+#cask "keepingyouawake" # Prevents your Mac from going to sleep
 
 # multimedia
 cask "kid3" # Audio tagger focusing on efficiency
@@ -46,6 +48,8 @@ cask "dash" # API documentation browser and code snippet manager
 cask "firefox"
 Cask "brave-browser"
 cask "google-chrome"
+cask "arc"
+cask "syntax-highlight" # Quicklook extension for source files
 cask "iterm2" # Terminal emulator as alternative to Apple's Terminal app
 cask "jupyter-notebook-viewer"
 cask "karabiner-elements" # Keyboard customizer
@@ -60,6 +64,7 @@ cask "notion" # App to write, plan, collaborate, and get organized
 cask "niftyman" # Beautifully crafted Notion experience in MacOS menu bar!
 cask "zotero" # Collect, organize, cite, and share research sources
 cask "prusaslicer" 
+#cask "tad" 
 #cask "notion-enhanced" # Enhancer/customiser for the all-in-one productivity workspace notion.so
 #cask "nteract" # Interactive computing suite
 #cask "syncthing" # Open source continuous file synchronization application
