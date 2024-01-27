@@ -14,4 +14,5 @@ brew "cmatrix" # Console Matrix
 brew "z" # Tracks most-used directories to make cd smarter
 brew "asitop" # Performance monitoring CLI tool for Apple Silicon
 brew "rclone" # Rsync for cloud storage
+brew "pipx" # Install and Run Python Applications in Isolated Environments
 #brew "gitmoji" # Interactive command-line tool for using emoji in commit messages
