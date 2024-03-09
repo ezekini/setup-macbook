@@ -1,5 +1,16 @@
 cask_args appdir: "/Applications", require_sha: true
 
+# taps
+tap "homebrew/cask-fonts"
+
+# fonts
+cask "font-cascadia-code"
+cask "font-cascadia-mono"
+#cask "font-cascadia-mono-pl"
+cask "font-fira-code"
+cask "font-hack-nerd-font"
+
+
 # Almacenamiento
 cask "google-drive"
 #cask "Dropbox"
@@ -12,8 +23,7 @@ cask "slack"
 # OS management tools
 cask "rectangle" # Move and resize windows using keyboard shortcuts or snap areas
 cask "aldente" # Menu bar tool to limit maximum charging percentage
-cask "betterdisplay" #D isplay management tool
-cask "MonitorControl" # Tool to control external monitor brightness & volume (más simple que betterdisplay)
+cask "betterdisplay"
 cask "nightowl" # Utility to toggle dark mode
 cask "hiddenbar" # Hidden Bar lets you hide menu bar items to give your Mac a cleaner look.
 cask "bluesnooze" # Prevents your sleeping computer from connecting to Bluetooth accessories
