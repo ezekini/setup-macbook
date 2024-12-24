@@ -10,12 +10,15 @@ brew "tldr" # Simplified and community-driven man pages
 #brew "tmux" # Terminal multiplexer
 brew "tree" # Display directories as trees (with optional color/HTML output)
 #brew "nnn" # Tiny, lightning fast, feature-packed file manager
-brew "cmatrix" # Console Matrix
 brew "z" # Tracks most-used directories to make cd smarter
 brew "speedtest-cli"
 brew "htop" # Improved top (interactive process viewer)
 brew "asitop" # Performance monitoring CLI tool for Apple Silicon
+brew "mactop"
+brew "btop"
+brew "eza" # Modern, maintained replacement for ls
 brew "rclone" # Rsync for cloud storage
 #brew "pipx" # Install and Run Python Applications in Isolated Environments
 brew "mas" # Mac App Store command-line interface
 #brew "gitmoji" # Interactive command-line tool for using emoji in commit messages
+#brew "cmatrix" # Console Matrix
