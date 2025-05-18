@@ -66,8 +66,8 @@ cask "syntax-highlight" # Quicklook extension for source files
 #cask "iterm2" # Terminal emulator as alternative to Apple's Terminal app
 cask "jupyter-notebook-viewer"
 cask "karabiner-elements" # Keyboard customizer
-cask "the-unarchiver" # Unpacks archive files
-#cask "keka" # File archiver
+#cask "the-unarchiver" # Unpacks archive files
+cask "keka" # File archiver
 cask "numi" # Calculator and converter application
 cask "mounty" # Re-mounts write-protected NTFS volumes
 cask "timemachineeditor" # Utility to change the default backup interval of Time Machine
