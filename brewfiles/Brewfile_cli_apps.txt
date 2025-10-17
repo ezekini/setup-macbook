@@ -15,6 +15,7 @@ brew "tmux" # Terminal multiplexer
 brew "z" # Tracks most-used directories to make cd smarter
 brew "speedtest-cli"
 brew "htop" # Improved top (interactive process viewer)
+brew "zsh"
 brew "hyfetch" # Fast, highly customisable system info script with LGBTQ+ pride flags
 brew "asitop" # Performance monitoring CLI tool for Apple Silicon
 brew "mactop"

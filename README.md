@@ -4,6 +4,8 @@ Luego de setear varias computadores con Mac OS para diferentes personas y princi
 >💡 **pssss**  👉🏼  El listado de aplicaciones y tools a instalar es total y completamente personal, por lo que la idea es customizar a gusto.
 Algunas son de uso exclusivo para sistemas (ejemplo git), otras de uso general (ej spotify 🎧), otras de uso mixto (ej Notion) y varias son afines a mis intereses/usos particulares.
 
+> [Acá](https://sourabhbajaj.com/mac-setup/) hay buena data aunque algo vieja 
+
 </br>
 
 - [Homebrew](#homebrew)

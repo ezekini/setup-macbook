@@ -54,6 +54,7 @@ cask "notunes" # Evitar que se abra la app de musica de mac os
 ########################
 ###### de todo #########
 cask "google-drive"
+cask "obsidian"
 cask "android-file-transfer" # Transfer files from and to an Android smartphone
 cask "sublime-text" # Text editor for code, markup and prose
 cask "zotero" # Collect, organise, cite, and share research sources
