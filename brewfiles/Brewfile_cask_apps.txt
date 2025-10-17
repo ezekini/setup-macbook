@@ -11,23 +11,22 @@ cask "font-fira-code"
 cask "font-hack-nerd-font"
 
 
-# Almacenamiento
-cask "google-drive"
-#cask "Dropbox"
-
-# Comms
+########################
+###### Comms #########
 cask "telegram-desktop"
-#cask "whatsapp"
+cask "whatsapp"
 #cask "slack"
 
-# OS management tools
+
+###############################
+####### MacOS related #########
 cask "rectangle" # Move and resize windows using keyboard shortcuts or snap areas
-#cask "aldente" # Menu bar tool to limit maximum charging percentage
-#cask "betterdisplay"
 cask "monitorcontrol"
 cask "nightfall" # Utility to toggle dark mode
 cask "hiddenbar" # Hidden Bar lets you hide menu bar items to give your Mac a cleaner look.
 cask "bluesnooze" # Prevents your sleeping computer from connecting to Bluetooth accessories
+#cask "aldente" # Menu bar tool to limit maximum charging percentage
+#cask "betterdisplay"
 #cask "hocus-focus"
 #cask "pock" # Utility to display the Dock in the Touch Bar
 #cask "amethyst" # Automatic tiling window manager similar to xmonad
@@ -35,14 +34,16 @@ cask "bluesnooze" # Prevents your sleeping computer from connecting to Bluetooth
 #cask "hammerspoon" # desktop automation tool for macOS with Lua scripts
 #cask "keepingyouawake" # Prevents your Mac from going to sleep
 
-# multimedia
+########################
+##### multimedia #######
 cask "kid3" # Audio tagger focusing on efficiency
 cask "spotify"
+cask "tidal"
 cask "vox" # Music player
 cask "soulseek" # File sharing network
 cask "xld" # Lossless audio decoder
 cask "iina" # Multimedia player
-#cask "roon" # THE ULTIMATE Music PLAYER FOR MUSIC FANATICS
+cask "roon" # THE ULTIMATE Music PLAYER FOR MUSIC FANATICS
 cask "transmission" # Open-source BitTorrent client
 cask "transmission-remote-gui"
 cask "notunes" # Evitar que se abra la app de musica de mac os
@@ -50,41 +51,42 @@ cask "notunes" # Evitar que se abra la app de musica de mac os
 #cask "handbrake" # Open-source video transcoder
 
 
-# De todo
+########################
+###### de todo #########
+cask "google-drive"
 cask "android-file-transfer" # Transfer files from and to an Android smartphone
-#cask "dbeaver-community" # Universal database tool and SQL client
 cask "sublime-text" # Text editor for code, markup and prose
 cask "zotero" # Collect, organise, cite, and share research sources
-#cask "bbedit" # Text, code, and markup editor
 cask "appcleaner" # Application uninstaller
-#cask "dash" # API documentation browser and code snippet manager
-#cask "firefox"
 cask "brave-browser"
-#cask "google-chrome"
-#cask "arc"
+cask "arc"
 cask "syntax-highlight" # Quicklook extension for source files
-#cask "iterm2" # Terminal emulator as alternative to Apple's Terminal app
 cask "jupyter-notebook-viewer"
 cask "karabiner-elements" # Keyboard customizer
-#cask "the-unarchiver" # Unpacks archive files
 cask "keka" # File archiver
 cask "numi" # Calculator and converter application
 cask "mounty" # Re-mounts write-protected NTFS volumes
 cask "timemachineeditor" # Utility to change the default backup interval of Time Machine
+cask "flameshot" # Screenshot software
+cask "prusaslicer" 
+cask "zotero" # Collect, organize, cite, and share research sources
+cask "warp" # warp terminal
+cask "ghostty" # ghostty terminal
+cask "qlmarkdown" # Quick Look generator for Markdown files
+cask "suspicious-package" # Application for inspecting installer packages
+cask "syntax-highlight" # Quicklook extension for source files
+#cask "dash" # API documentation browser and code snippet manager
+#cask "iterm2" # Terminal emulator as alternative to Apple's Terminal app
+#cask "the-unarchiver" # Unpacks archive files
+#cask "bbedit" # Text, code, and markup editor
 #cask "textbuddy" # Convert, filter, sort, and transform text
 #cask "workflowy" # Notetaking tool
-cask "notion" # App to write, plan, collaborate, and get organized
-cask "flameshot" # Screenshot software
-#cask "niftyman" # Beautifully crafted Notion experience in MacOS menu bar!
-#cask "zotero" # Collect, organize, cite, and share research sources
-#cask "prusaslicer" 
-#cask "tad" 
-#cask "notion-enhanced" # Enhancer/customiser for the all-in-one productivity workspace notion.so
 #cask "nteract" # Interactive computing suite
 #cask "syncthing" # Open source continuous file synchronization application
 #cask "texstudio"
 
-# infosec
+########################
+###### infosec #########
 #cask "1password" # Password manager that keeps all passwords secure behind one password
 #cask "authy" # 2FA
 #cask "lulu" # Open-source firewall to block unknown outgoing connections

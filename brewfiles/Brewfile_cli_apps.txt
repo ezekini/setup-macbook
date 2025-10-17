@@ -5,6 +5,9 @@
 # CLI
 
 brew "git"
+brew "gh"
+brew "uv"
+brew "zellij" # Pluggable terminal workspace, with terminal multiplexer as the base feature
 brew "tldr" # Simplified and community-driven man pages
 brew "tree" # Display directories as trees (with optional color/HTML output)
 brew "nnn" # Tiny, lightning fast, feature-packed file manager
@@ -20,8 +23,9 @@ brew "eza" # Modern, maintained replacement for ls
 brew "mas" # Mac App Store command-line interface
 brew "rclone" # Rsync for cloud storage
 brew "micro" # editor nano like
-#brew "pipx" # Install and Run Python Applications in Isolated Environments
-#brew "gh"
+brew "delta" # A syntax-highlighting pager for git, diff, grep, and blame output
+
 #brew "diff-so-fancy" # Disk Usage/Free Utility (Linux, BSD, macOS & Windows) 
 #brew "duf" # Disk Usage/Free Utility (Linux, BSD, macOS & Windows) 
 #brew "gitmoji" # Interactive command-line tool for using emoji in commit messages
+
