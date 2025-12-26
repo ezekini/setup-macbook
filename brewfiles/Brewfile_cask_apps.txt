@@ -2,6 +2,7 @@ cask_args appdir: "/Applications", require_sha: true
 
 # taps
 tap "homebrew/cask-fonts"
+tap "nikitabobko/tap/aerospace"
 
 # fonts
 cask "font-cascadia-code"
@@ -21,7 +22,8 @@ cask "whatsapp"
 ###############################
 ####### MacOS related #########
 cask "rectangle" # Move and resize windows using keyboard shortcuts or snap areas
-cask "monitorcontrol"
+cask "aerospace" # AeroSpace is an i3-like tiling window manager for macOS
+cask "monitorcontrol" # Tool to control external monitor brightness & volume
 cask "nightfall" # Utility to toggle dark mode
 cask "hiddenbar" # Hidden Bar lets you hide menu bar items to give your Mac a cleaner look.
 cask "bluesnooze" # Prevents your sleeping computer from connecting to Bluetooth accessories
