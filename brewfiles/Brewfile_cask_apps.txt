@@ -1,16 +1,16 @@
 cask_args appdir: "/Applications", require_sha: true
 
 # taps
-tap "homebrew/cask-fonts"
-tap "nikitabobko/tap/aerospace"
+#tap "homebrew/cask-fonts"
+#tap "nikitabobko/tap/aerospace"
 
 # fonts
 cask "font-cascadia-code"
 cask "font-cascadia-mono"
-#cask "font-cascadia-mono-pl"
 cask "font-fira-code"
 cask "font-hack-nerd-font"
-
+cask "font-iosevka"
+cask "font-symbols-only-nerd-font"
 
 ########################
 ###### Comms #########
@@ -22,11 +22,12 @@ cask "whatsapp"
 ###############################
 ####### MacOS related #########
 cask "rectangle" # Move and resize windows using keyboard shortcuts or snap areas
-cask "aerospace" # AeroSpace is an i3-like tiling window manager for macOS
 cask "monitorcontrol" # Tool to control external monitor brightness & volume
 cask "nightfall" # Utility to toggle dark mode
+cask "flashspace" # Virtual workspace manager
 cask "hiddenbar" # Hidden Bar lets you hide menu bar items to give your Mac a cleaner look.
 cask "bluesnooze" # Prevents your sleeping computer from connecting to Bluetooth accessories
+#cask "aerospace" # AeroSpace is an i3-like tiling window manager for macOS
 #cask "aldente" # Menu bar tool to limit maximum charging percentage
 #cask "betterdisplay"
 #cask "hocus-focus"
