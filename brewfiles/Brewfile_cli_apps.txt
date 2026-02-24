@@ -14,22 +14,26 @@ brew "tmux" # Terminal multiplexer
 brew "tldr" # Simplified and community-driven man pages
 brew "tree" # Display directories as trees (with optional color/HTML output)
 brew "stow" # Organize software neatly under a single directory tree
+brew "fzf" # Command-line fuzzy finder written in Go
+brew "zoxide" # Shell extension to navigate your filesystem faster
 brew "nnn" # Tiny, lightning fast, feature-packed file manager
-brew "z" # Tracks most-used directories to make cd smarter
 brew "speedtest-cli"
+brew "ripgrep" # Search tool like grep and The Silver Searcher
+brew "bat" # Clone of cat(1) with syntax highlighting and Git integration
+brew "fd" # Simple, fast and user-friendly alternative to find
 brew "hyfetch" # Fast, highly customisable system info script with LGBTQ+ pride flags
 brew "htop" # Improved top (interactive process viewer)
-brew "asitop" # Performance monitoring CLI tool for Apple Silicon
-brew "mactop" # Apple Silicon Monitor Top written in Go Lang
-brew "btop" # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "mole" # Deep clean and optimize your Mac
 brew "eza" # Modern, maintained replacement for ls
 brew "mas" # Mac App Store command-line interface
 brew "rclone" # Rsync for cloud storage
 brew "micro" # editor nano like
 brew "delta" # A syntax-highlighting pager for git, diff, grep, and blame output
+brew "asitop" # Performance monitoring CLI tool for Apple Silicon
+brew "mactop" # Apple Silicon Monitor Top written in Go Lang
+brew "btop" # Resource monitor. C++ version and continuation of bashtop and bpytop
 
+#brew "z" # Tracks most-used directories to make cd smarter
 #brew "diff-so-fancy" # Disk Usage/Free Utility (Linux, BSD, macOS & Windows) 
 #brew "duf" # Disk Usage/Free Utility (Linux, BSD, macOS & Windows) 
-#brew "gitmoji" # Interactive command-line tool for using emoji in commit messages
 
