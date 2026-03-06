@@ -1,22 +1,24 @@
 cask_args appdir: "/Applications", require_sha: true
 
-# taps
-#tap "homebrew/cask-fonts"
-#tap "nikitabobko/tap/aerospace"
-
-# fonts
+########################
+####### Fonts ##########
 cask "font-cascadia-code"
 cask "font-cascadia-mono"
-cask "font-fira-code"
+cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
 cask "font-iosevka"
-cask "font-symbols-only-nerd-font"
 
 ########################
-###### Comms #########
+###### Comms ##########
 cask "telegram-desktop"
 cask "whatsapp"
 #cask "slack"
+
+##################################
+####### Programming & LLM ########
+cask "vscode"
+cask "claude-code"
+cask "claude"
 
 
 ###############################
@@ -69,16 +71,16 @@ cask "jupyter-notebook-viewer"
 cask "karabiner-elements" # Keyboard customizer
 cask "keka" # File archiver
 cask "numi" # Calculator and converter application
-cask "mounty" # Re-mounts write-protected NTFS volumes
 cask "timemachineeditor" # Utility to change the default backup interval of Time Machine
 cask "flameshot" # Screenshot software
 cask "prusaslicer" 
 cask "zotero" # Collect, organize, cite, and share research sources
-cask "warp" # warp terminal
 cask "ghostty" # ghostty terminal
 cask "qlmarkdown" # Quick Look generator for Markdown files
 cask "suspicious-package" # Application for inspecting installer packages
 cask "syntax-highlight" # Quicklook extension for source files
+#cask "warp" # warp terminal
+#cask "mounty" # Re-mounts write-protected NTFS volumes
 #cask "dash" # API documentation browser and code snippet manager
 #cask "iterm2" # Terminal emulator as alternative to Apple's Terminal app
 #cask "the-unarchiver" # Unpacks archive files
