@@ -1,7 +1,0 @@
-cask_args appdir: "/Applications", require_sha: true
-
-brew "julia"
-brew "miniforge"
-cask "r"
-cask "rstudio"
-cask "visual-studio-code"
