@@ -27,6 +27,7 @@ brew "rclone" # Rsync for cloud storage
 brew "micro" # editor nano like
 brew "delta" # A syntax-highlighting pager for git, diff, grep, and blame output
 brew "llmfit" # Find what models run on your hardware
+brew "csvlens" # Command-line csv viewer
 
 # Resources monitor
 brew "htop" # Improved top (interactive process viewer)

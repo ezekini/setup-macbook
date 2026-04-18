@@ -20,7 +20,6 @@ cask "vscode"
 cask "claude-code"
 cask "claude"
 
-
 ###############################
 ####### MacOS related #########
 cask "rectangle" # Move and resize windows using keyboard shortcuts or snap areas
@@ -44,10 +43,13 @@ cask "bluesnooze" # Prevents your sleeping computer from connecting to Bluetooth
 cask "kid3" # Audio tagger focusing on efficiency
 cask "spotify"
 cask "tidal"
+#cask "blackhole-2ch"
+#cask "blackhole-16ch"
+#cask "blackhole-64ch"
 cask "vox" # Music player
 cask "soulseek" # File sharing network
-cask "xld" # Lossless audio decoder
 cask "iina" # Multimedia player
+cask "xld" # Lossless audio decoder
 cask "roon" # THE ULTIMATE Music PLAYER FOR MUSIC FANATICS
 cask "transmission" # Open-source BitTorrent client
 cask "transmission-remote-gui"
