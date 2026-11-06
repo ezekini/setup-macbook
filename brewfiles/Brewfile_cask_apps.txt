@@ -14,11 +14,12 @@ cask "telegram-desktop"
 cask "whatsapp"
 #cask "slack"
 
-##################################
-####### Programming & LLM ########
+##############################
+##### Programming & LLM ######
 cask "vscode"
-cask "claude-code"
-cask "claude"
+cask "handy" # Speech to text application
+# cask "claude-code"
+# cask "claude"
 
 ###############################
 ####### MacOS related #########
@@ -26,8 +27,11 @@ cask "rectangle" # Move and resize windows using keyboard shortcuts or snap area
 cask "monitorcontrol" # Tool to control external monitor brightness & volume
 cask "nightfall" # Utility to toggle dark mode
 cask "flashspace" # Virtual workspace manager
+cask "vorssaint" # Menu bar toolkit with keep-awake, system monitor and volume mixer
 cask "hiddenbar" # Hidden Bar lets you hide menu bar items to give your Mac a cleaner look.
+cask "macpacker" # Archive manager
 cask "bluesnooze" # Prevents your sleeping computer from connecting to Bluetooth accessories
+#cask "fif7y/tap/dimble" 
 #cask "aerospace" # AeroSpace is an i3-like tiling window manager for macOS
 #cask "aldente" # Menu bar tool to limit maximum charging percentage
 #cask "betterdisplay"
@@ -43,9 +47,7 @@ cask "bluesnooze" # Prevents your sleeping computer from connecting to Bluetooth
 cask "kid3" # Audio tagger focusing on efficiency
 cask "spotify"
 cask "tidal"
-#cask "blackhole-2ch"
-#cask "blackhole-16ch"
-#cask "blackhole-64ch"
+cask "betteraudio" # Per-app volume, EQ and audio device control
 cask "vox" # Music player
 cask "soulseek" # File sharing network
 cask "iina" # Multimedia player
@@ -54,6 +56,9 @@ cask "roon" # THE ULTIMATE Music PLAYER FOR MUSIC FANATICS
 cask "transmission" # Open-source BitTorrent client
 cask "transmission-remote-gui"
 cask "notunes" # Evitar que se abra la app de musica de mac os
+#cask "blackhole-2ch"
+#cask "blackhole-16ch"
+#cask "blackhole-64ch"
 #cask "plug" # Music player for The Hype Machine
 #cask "handbrake" # Open-source video transcoder
 
@@ -61,8 +66,7 @@ cask "notunes" # Evitar que se abra la app de musica de mac os
 ########################
 ###### de todo #########
 cask "google-drive"
-cask "obsidian"
-cask "android-file-transfer" # Transfer files from and to an Android smartphone
+cask "obsidian"cask "android-file-transfer" # Transfer files from and to an Android smartphone
 cask "sublime-text" # Text editor for code, markup and prose
 cask "zotero" # Collect, organise, cite, and share research sources
 cask "appcleaner" # Application uninstaller
@@ -71,7 +75,6 @@ cask "arc"
 cask "syntax-highlight" # Quicklook extension for source files
 cask "jupyter-notebook-viewer"
 cask "karabiner-elements" # Keyboard customizer
-cask "keka" # File archiver
 cask "numi" # Calculator and converter application
 cask "timemachineeditor" # Utility to change the default backup interval of Time Machine
 cask "flameshot" # Screenshot software

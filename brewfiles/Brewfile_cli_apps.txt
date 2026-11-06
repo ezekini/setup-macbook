@@ -1,5 +1,3 @@
-tap "tw93/tap"
-
 brew "git" # Distributed revision control system
 brew "zsh"
 brew "gh" # GitHub command-line tool
